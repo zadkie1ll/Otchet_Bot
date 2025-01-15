@@ -3,9 +3,10 @@ import json
 from datetime import datetime, timezone
 import telebot
 import time
+import secret
 
 API_URL = 'https://pravburo.moizvonki.ru/api/v1'
-API_KEY = 'mi7phnkxrpt0e46xvrp6dlkykhj8j9sm'
+API_KEY = secret.api_key
 
 managers = ['pravburo108@gmail.com', 'pravburo102@gmail.com', 'pravburo107@gmail.com', 'pravburo115@gmail.com', 'pravburo119@gmail.com']
 
@@ -26,8 +27,8 @@ manager_names = {
     'pravburo119@gmail.com': 'Наташа'
 }
 
-bot = telebot.TeleBot("7206769028:AAGk2mOX2sjSn_tMkVIEWNkFVRDvuuTNYcU")
-chat_id = -4667960936
+bot = telebot.TeleBot(secret.token)
+chat_id = -1002399880843
 
 manager_data = {}
 
